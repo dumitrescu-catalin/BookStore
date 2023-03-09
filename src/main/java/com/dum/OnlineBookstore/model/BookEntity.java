@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -27,6 +28,6 @@ public class BookEntity {
     private BigDecimal price;
     @Column(name = "quantity_in_stock")
     private Integer quantityInStocks;
-
+    private LocalDate date;
 
 }
